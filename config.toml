@@ -1,0 +1,60 @@
+baseurl = "/"
+title = "Aaron's twitter scraps"
+copyright = "Copyright (c) 2018, all rights reserved."
+languageCode = "en-US"
+canonifyurls = true
+paginate = 3
+theme = "hugo-dusk"
+enableRobotsTXT = true
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+googleAnalytics = ""
+disqusShortname = "asimumba"
+
+SectionPagesMenu = "main"
+
+# use Chroma for syntax highlight
+pygmentsStyle = "monokai" # other dark style options: vim, fruity, monokai
+# enable syntax highlight for code blocks
+pygmentsCodeFences = true
+
+[[menu.main]]
+  name = "Twits"
+  weight = -120
+  identifier = "post"
+  url = "/post/"
+
+[[menu.main]]
+  name = "Tags"
+  weight = -110
+  identifier = "tag"
+  url = "/tags/"
+
+[taxonomies]
+  category = "categories"
+  group = "groups"
+  series = "series"
+  tag = "tags"
+
+[author]
+  name = ""
+
+[params.meta]
+  keywords = ""
+  description = "Personal blog."
+
+[params]
+  email = "simumbaa21@gmail.com"
+  github = "asimumba"
+  gitlab = "asimumba"
+  twitter = "asimumba_"
+  #linkedin = "linkedin id"
+
+[params.colors]
+  # hugo-dusk colors
+  background = "#101010" # background color for the site
+  main = "#99cc66"
+  text = "#dbdbdb"
+  code-quote-bg = "#1D1F21" # background color for quotes and code blocks
+  copyright = "#404040" # copyright text color
